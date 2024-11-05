@@ -16,14 +16,5 @@
 - **HTML5 y CSS3**: Estructura y estilo del sitio.
 - **Bootstrap**: Para un diseño responsivo y componentes dinámicos.
 - **Font Awesome**: Iconos de redes sociales.
-  
-## Estructura de Archivos
 
-```plaintext
-.
-├── index.html         # Archivo principal de la página web
-├── css/
-│   └── style.css      # Estilos personalizados
-├── img/
-│   └── home-removebg-preview.png   # Imagen del logo
-└── README.md          # Documentación del proyecto
+
