@@ -1,0 +1,64 @@
+
+/* Estilos para el h1 */
+/* Estilos generales para centrar el contenido */
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-image: url(https://media.istockphoto.com/id/1465077851/es/foto/electrodom%C3%A9sticos-t%C3%A9cnicas-de-cocina-dom%C3%A9sticas-aisladas-sobre-fondo-blanco-nevera.jpg?s=2048x2048&w=is&k=20&c=MPppEV8epYC9mZdgb1RqtHPImzop41tAWUrCLvHmSeo=);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* Estilos para el h1 */
+h1 {
+font-family: 'Merriweather', serif;
+font-size: 2.5rem;
+color: #2c3e50;
+text-align: center;
+margin-bottom: 20px;
+font-weight: 700;
+border-bottom: 2px solid #3498db;
+padding-bottom: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+background-color: #ffffff; /* Fondo blanco */
+padding: 10px 20px;
+border-radius: 10px;
+}
+
+/* Estilos para el párrafo */
+.text {
+font-family: 'Open Sans', sans-serif;
+font-size: 1.15rem;
+font-weight: 500;
+color: #040404;
+line-height: 1.8;
+text-align: justify;
+margin: 20px 0;
+padding: 20px;
+background-color: #ffffffa2; /* Fondo blanco */
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+box-shadow: 10px 10px 37px 37px rgba(56,49,49,0.8) inset;
+-webkit-box-shadow: 10px 10px 37px 37px rgba(56,49,49,0.8) inset;
+-moz-box-shadow: 10px 10px 37px 37px rgba(56,49,49,0.8) inset;
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+h1 {
+font-size: 2rem;
+}
+
+p {
+font-size: 1rem;
+padding: 15px;
+max-width: 90%; /* Ancho adaptable a pantallas pequeñas */
+}
+}
+
+}
+
