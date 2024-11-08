@@ -193,7 +193,7 @@ footer p {
     .container {
         display: flex;
         flex-direction: column;
-        border: solid;
+       
         width: 100%;
 
     }
