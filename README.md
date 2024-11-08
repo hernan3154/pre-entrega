@@ -17,13 +17,26 @@
 - **Bootstrap**: Para un diseño responsivo y componentes dinámicos.
 - **Font Awesome**: Iconos de redes sociales.
   
-## Estructura de Archivos
+# Descripción de la Sección de Tarjetas de Productos
 
-```plaintext
-.
-├── index.html         # Archivo principal de la página web
-├── css/
-│   └── style.css      # Estilos personalizados
-├── img/
-│   └── home-removebg-preview.png   # Imagen del logo
-└── README.md          # Documentación del proyecto
+La sección de tarjetas de productos se implementó dentro de un `section` con la clase `section-container`, que contiene múltiples elementos de tipo `div` con la clase `card`, representando cada uno un producto de forma independiente. Esta sección se desarrolló utilizando `Bootstrap` para garantizar una presentación moderna, atractiva y responsiva.
+
+## Estructura de las Tarjetas
+
+- **Imágenes de los productos**: Cada tarjeta incluye una imagen destacada, ubicada en la parte superior mediante la etiqueta `<img>` con la clase `card-img-top`. Las imágenes provienen de enlaces externos (por ejemplo, Pexels) y se utilizan únicamente con fines educativos para simular un catálogo de productos.
+- **Cuerpo de la tarjeta**: La información del producto se encuentra en un contenedor `<div>` con la clase `card-body`, el cual contiene:
+  - Un título (`<h5>`) que muestra el nombre del producto.
+  - Un subtítulo (`<h6>`) que detalla el precio.
+  - Una descripción breve (`<p>` con la clase `card-text`), donde se mencionan las características destacadas del producto.
+- **Botón de acción**: Debajo del contenido de cada tarjeta se incluye un botón (`<a>` con la clase `btn btn-primary`) que permite al usuario agregar el producto al carrito de compras o interactuar de alguna manera. Este botón es un elemento de acción clave para facilitar la experiencia de usuario.
+
+## Ventajas de la Implementación
+
+- **Diseño responsivo**: Gracias a la utilización de `Bootstrap`, las tarjetas se adaptan automáticamente al tamaño de la pantalla del dispositivo, garantizando una visualización óptima en móviles, tabletas y computadoras de escritorio.
+- **Fácil personalización**: La estructura basada en `Bootstrap` permite modificaciones y ampliaciones sencillas, lo cual facilita la adición de nuevas funcionalidades o el cambio de diseño.
+- **Accesibilidad**: Se incluyeron atributos `alt` descriptivos en las imágenes para mejorar la accesibilidad de la página y proporcionar contexto a los usuarios que utilizan lectores de pantalla.
+
+
+
+
+
