@@ -212,7 +212,12 @@ footer p {
     }
 
     nav ul li {
-        font-size: 12px;
+        font-size: 13px;
+    }
+
+    nav ul li {
+
+        margin: 0 5px;
     }
     .items-footer li a {
         color: black;
