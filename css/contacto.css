@@ -14,9 +14,7 @@
     width: 100%;
     max-width: 100%;
     padding: 15rem;
-    background-image: url(https://media.istockphoto.com/id/1465077851/es/foto/electrodom%C3%A9sticos-t%C3%A9cnicas-de-cocina-dom%C3%A9sticas-aisladas-sobre-fondo-blanco-nevera.jpg?s=2048x2048&w=is&k=20&c=MPppEV8epYC9mZdgb1RqtHPImzop41tAWUrCLvHmSeo=);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #3F51B5;
 
 }
 
@@ -26,7 +24,7 @@
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    background-color: #fdfdfd86;
+    background-color: #ffffff7b;
     border-radius: 8px;
     justify-content: space-around;
 }

@@ -5,23 +5,28 @@
 }
 
 /* estilos general */
-body {
+.body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #3F51B5;
+    
 }
+
 
 /*carrosel estilo*/
 #carouselExampleAutoplaying {
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1rem;
+    
 }
 
 .carousel-inner img {
     width: 100%;
     height: auto;
 }
+
 
 /* Navbar */
 nav.container {
@@ -36,7 +41,9 @@ nav.container {
 
 /*Logo*/
 .img-logo {
-    width: 35vh;
+    width: 30vh;
+    height: auto;
+
     justify-content: center;
 }
 
@@ -70,10 +77,12 @@ nav ul li a {
 }
 
 
-nav ul li :hover {
+
+.div-container ul li :hover {
     background-color: #0a68ec;
     padding: 1rem;
     border-radius: 15px;
+    transition: 0.5s;
 
 
 }
@@ -167,16 +176,16 @@ footer p {
 
 /* Media query*/
 
-@media(min-width:360px) and (max-width:800px) {
+@media(min-width:260px) and (max-width:800px) {
     .texto {
         padding: 0px 30px;
         border-radius: 8px;
         width: 100%;
 
     }
-
+  
     .img-logo {
-        width: 25vh;
+        width: 20vh;
         justify-content: center;
     }
 
@@ -212,12 +221,12 @@ footer p {
     }
 
     nav ul li {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     nav ul li {
 
-        margin: 0 5px;
+        margin: 0 0px;
     }
     .items-footer li a {
         color: black;
