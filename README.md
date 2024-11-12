@@ -19,11 +19,27 @@
   
 ## Estructura de Archivos
 
-```plaintext
-.
-├── index.html         # Archivo principal de la página web
-├── css/
-│   └── style.css      # Estilos personalizados
-├── img/
-│   └── home-removebg-preview.png   # Imagen del logo
-└── README.md          # Documentación del proyecto
+
+
+# Descripción de la Sección de Tarjetas de Productos
+
+La sección de tarjetas de productos se implementó representando cada uno un producto de forma independiente. Esta sección se desarrolló utilizando `Bootstrap` para garantizar una presentación moderna, atractiva y responsiva.
+
+## Estructura de las Tarjetas
+
+- **Imágenes de los productos**: Cada tarjeta incluye una imagen destacada. Las imágenes provienen de enlaces externos (por ejemplo, Pexels ) y se utilizan únicamente con fines educativos para simular un catálogo de productos.
+- **Cuerpo de la tarjeta**: La información del producto se encuentra en un contenedor `<div>` con la clase `card-body`, el cual contiene:
+  - Un título que muestra el nombre del producto.
+  - Un subtítulo  que detalla el precio.
+  - Una descripción breve con la clase , donde se mencionan las características destacadas del producto.
+
+
+- **Botón de acción**: Debajo del contenido de cada tarjeta se incluye un botón (`<a>` con la clase `btn btn-primary`) que permite al usuario agregar el producto al carrito de compras o interactuar de alguna manera. Este botón es un elemento de acción clave para facilitar la experiencia de usuario.que todavia esta inplentqado la seccion del carrito de compras que aun no esta terminada
+
+## Ventajas de la Implementación
+- **Diseño responsivo**: Gracias a la utilización de `Bootstrap`, las tarjetas se adaptan automáticamente al tamaño de la pantalla del dispositivo, garantizando una visualización óptima en móviles, tabletas y computadoras de escritorio.
+- **Fácil personalización**: La estructura basada en `Bootstrap` permite modificaciones y ampliaciones sencillas, lo cual facilita la adición de nuevas funcionalidades o el cambio de diseño.
+- **Accesibilidad**: Se incluyeron atributos `alt` descriptivos en las imágenes para mejorar la accesibilidad de la página y proporcionar contexto a los usuarios que utilizan lectores de pantalla.
+
+
+
