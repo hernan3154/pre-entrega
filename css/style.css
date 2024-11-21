@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     min-height: 100%;
     background-color: #0000ffff;
@@ -152,6 +153,8 @@ header .titulo h1 {
 /* Footer*/
 .footer {
     grid-area: footer;
+
+     
 }
 
 .items-footer {
@@ -165,6 +168,8 @@ header .titulo h1 {
 
 .footer-container {
     background-color: rgb(15, 15, 15);
+   
+    
 }
 
 .items-footer li {
@@ -227,7 +232,7 @@ footer p {
             "main sidebar" 1fr
             /* poniendo / para poner el ancho de las columnas  */
             "footer footer" auto / 3fr 1fr;
-        height: 100%;
+       
         width: 100%;
     }
 

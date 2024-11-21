@@ -2,6 +2,12 @@ body{
     width: 100%;
     background-color:rgb(39, 39, 193);
 }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
   /*********************************/
  /* Contenedor de productos */
@@ -83,14 +89,31 @@ body{
 .h1-titulo h1{
     
     font-weight: 700;
+    text-shadow:
+    -1px -1px 3px #999,
+    0 0 1px darkred,
+    1px 1px 1px red,
+    2px 2px 1px #555,
+    3px 3px 1px #222,
+    4px 4px 1px #000;
+color: rgb(230, 221, 221);
 }
   .promo-message {
     text-align: center;
     margin: 20px auto;
     font-size: 1.1rem;
     line-height: 1.5;
+    letter-spacing: 0.1rem;
     /*background-color: #3F51B5;*/ /* Fondo sutil */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-shadow:
+    -1px -1px 3px #999,
+    0 0 1px darkred,
+    1px 1px 1px red,
+    2px 2px 1px #555,
+    3px 3px 1px #222,
+    4px 4px 1px #000;
+color: rgb(230, 221, 221);
 }
