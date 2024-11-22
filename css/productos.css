@@ -1,12 +1,23 @@
-body{
-    width: 100%;
-    background-color:rgb(39, 39, 193);
-}
+
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  justify-content: center;
+  
+    --s: 41px; /* control the size*/
+    --c1: #774f38;
+    --c2: #bbaad4;
+    
+    --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+    --_c:,#0000 75%,var(--c2) 0;
+    background:
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+      conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+      conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+      var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+    background-size: var(--s) var(--s);
+  
 }
 
   /*********************************/
@@ -14,10 +25,9 @@ body {
 .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 1rem;
   margin: auto;
-  max-width: 1200px;
 }
 
 /* Estilo de las tarjetas */
@@ -96,11 +106,12 @@ body {
     2px 2px 1px #555,
     3px 3px 1px #222,
     4px 4px 1px #000;
-color: rgb(230, 221, 221);
+color: black;
 }
   .promo-message {
     text-align: center;
     margin: 20px auto;
+    font-weight: 600;
     font-size: 1.1rem;
     line-height: 1.5;
     letter-spacing: 0.1rem;
@@ -115,5 +126,5 @@ color: rgb(230, 221, 221);
     2px 2px 1px #555,
     3px 3px 1px #222,
     4px 4px 1px #000;
-color: rgb(230, 221, 221);
+color: black;
 }
