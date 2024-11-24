@@ -7,7 +7,7 @@ body {
     --s: 41px; /* control the size*/
     --c1: #774f38;
     --c2: #bbaad4;
-    
+
     --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
     --_c:,#0000 75%,var(--c2) 0;
     background:
@@ -102,7 +102,7 @@ body {
     text-shadow:
     -1px -1px 3px #999,
     0 0 1px darkred,
-    1px 1px 1px red,
+    /*1px 1px 1px red,*/
     2px 2px 1px #555,
     3px 3px 1px #222,
     4px 4px 1px #000;
@@ -111,18 +111,18 @@ color: black;
   .promo-message {
     text-align: center;
     margin: 20px auto;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.1rem;
     line-height: 1.5;
     letter-spacing: 0.1rem;
     /*background-color: #3F51B5;*/ /* Fondo sutil */
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.8);
     text-shadow:
-    -1px -1px 3px #999,
-    0 0 1px darkred,
-    1px 1px 1px red,
+    /*-1px -1px 3px #999,*/
+    0 0 -1px darkred,
+   /* 1px 1px 1px red,*/
     2px 2px 1px #555,
     3px 3px 1px #222,
     4px 4px 1px #000;
