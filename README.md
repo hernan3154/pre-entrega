@@ -66,11 +66,8 @@ El archivo HTML debe incluir un contenedor con el ID `card-container` donde se a
 ```html
 <div id="card-container" class="row"></div> 
 
-*** Resultado
-
-
+ Resultado
 Al ejecutar este script, se generan y muestran 18 tarjetas de productos, distribuidas en tres columnas gracias a las clases de Bootstrap. Las imágenes son únicas para cada tarjeta y el contenido textual describe un producto ficticio con un precio fijo y un botón para agregar al carrito. Este código es una base útil para catálogos dinámicos en aplicaciones de comercio electrónico.
-
 
 
 
