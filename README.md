@@ -43,3 +43,46 @@ La sección de tarjetas de productos se implementó representando cada uno un pr
 
 
 
+# Generador de Tarjetas Dinámicas
+
+Esta parte del  proyecto utiliza JavaScript para generar dinámicamente un conjunto de tarjetas de productos con diseño responsivo utilizando Bootstrap.
+
+## Descripción
+
+El script genera  tarjetas de productos y las inserta en un contenedor HTML definido. Cada tarjeta incluye:
+
+- Una imagen aleatoria generada desde [Picsum Photos](https://picsum.photos/).
+- Un título, precio y descripción ficticia del producto.
+- Un botón interactivo para "Agregar al Carrito".
+
+Las tarjetas se distribuyen en un diseño de rejilla (grid) gracias a las clases de Bootstrap.
+
+## Estructura del Proyecto
+
+### HTML
+
+El archivo HTML debe incluir un contenedor con el ID `card-container` donde se añadirán las tarjetas generadas:
+
+```html
+<div id="card-container" class="row"></div> 
+
+*** Resultado
+
+
+Al ejecutar este script, se generan y muestran 18 tarjetas de productos, distribuidas en tres columnas gracias a las clases de Bootstrap. Las imágenes son únicas para cada tarjeta y el contenido textual describe un producto ficticio con un precio fijo y un botón para agregar al carrito. Este código es una base útil para catálogos dinámicos en aplicaciones de comercio electrónico.
+
+
+
+
+Tecnologías Usadas
+HTML
+* JavaScript
+* Bootstrap
+* Personalización
+* Puedes modificar las siguientes partes del script según tus necesidades:
+
+Cambiar las descripciones de los productos.
+Personalizar el precio o las etiquetas de los botones.
+Agregar funcionalidades adicionales al botón "Agregar al Carrito".
+Autor
+Este código fue creado como un ejemplo de generación dinámica de contenido para páginas web.
