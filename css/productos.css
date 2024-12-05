@@ -18,7 +18,27 @@ body {
     background-size: var(--s) var(--s);
   
 }
+/***************************************/
+/*  contador de las tajetas + - */
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 0.5rem;
+  padding: 1rem;
+}
+.btn-secondary{
+  font-size: 0.5rem;
+  background-color: #000;
 
+}
+
+.cantidad {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
   /*********************************/
  /* Contenedor de productos */
 .products-container {
