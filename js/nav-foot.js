@@ -1,8 +1,6 @@
 const header = document.getElementById('header');
 const navbar = document.getElementById('navbar');
 const footer = document.getElementById('footer');
-console.log(header)
-console.log(navbar)
 header.innerHTML = `<div class="logo">
                     <a href="index.html"><img src="/img/home-removebg-preview.png" alt="Logo"></a>
                 </div>
@@ -15,7 +13,7 @@ navbar.innerHTML = ` <ul class="nav-ul">
                     <li><a href="productos.html"  >Productos</a></li>
                     <li><a href="nosotros.html" >Nosotros</a></li>
                     <li><a href="contacto.html" >Contacto</a></li>
-                    <li><a href="carrito.html" ><i class="fa-solid fa-cart-shopping"></i> 0</a> </li>
+                    <li><a href="carrito.html" ><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></a> </li>
                 </ul>`;
 
 footer.innerHTML = `<ul class="items-footer">

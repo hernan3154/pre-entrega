@@ -1,0 +1,8 @@
+forEach :recorre cada elemento del array.
+producto : representa el elemento actual del array.
+index: es la posición del elemento dentro del array.
+
+
+JSON.parse():Convierte una cadena de texto (en formato JSON) en un objeto o array de JavaScript.
+
+|| []:  Es un operador lógico OR.Si el valor de la izquierda es null, undefined, false, o una cadena vacía (""), se utilizará el valor de la derecha como valor predeterminado.

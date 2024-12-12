@@ -46,6 +46,7 @@ La sección de tarjetas de productos se implementó representando cada uno un pr
 # Generador de Tarjetas Dinámicas
 
 Esta parte del  proyecto utiliza JavaScript para generar dinámicamente un conjunto de tarjetas de productos con diseño responsivo utilizando Bootstrap.
+Tambien cuenta con los botones de decrementar y incrementar la cantidad de productos en las tarjetas de compras
 
 ## Descripción
 
@@ -82,4 +83,5 @@ Cambiar las descripciones de los productos.
 Personalizar el precio o las etiquetas de los botones.
 Agregar funcionalidades adicionales al botón "Agregar al Carrito".
 Autor
-Este código fue creado como un ejemplo de generación dinámica de contenido para páginas web.
+Este código fue creado con fines educativo y de ejemplo.
+
