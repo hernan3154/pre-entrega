@@ -53,12 +53,7 @@ body {
   width: auto;
 }
 
-/* Estilo de las tarjetas */
-/*.row>*{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}*/
+
 .card {
   display: flex;
   justify-content: center;
