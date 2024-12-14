@@ -21,25 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // Recorrer los productos y crear tarjetas
         productos.products.forEach(producto => {
           const cardDiv = document.createElement("div");
-          cardDiv.className = "col-md-4";
-
+          cardDiv.className = "col-lg-3 col-md-4 col-sm-6 mb-4"; // Más flexibilidad responsiva
+      
           cardDiv.innerHTML = `
-            <div class="card" id="card">
-              <img src="${producto.thumbnail}" id="imagen" class="card-img-top imagen" alt="${producto.title}">
-              <div class="card-body">
-                <h5 class="card-title" id="titulo">${producto.title}</h5>
-                <h6 class="card-price" id="precio">Precio: $${producto.price}</h6>
-                <p class="descripcion" id="descripcion">${
-                  producto.description.length > 50
-                    ? producto.description.substring(0, 50) + "..."
-                    : producto.description
-                }</p>
-                <button class="btn btn-primary boton-carrito">Agregar al Carrito</button>
+              <div class="card">
+                  <img src="${producto.thumbnail}" class="card-img-top imagen" alt="${producto.title}" aria-label="Imagen del producto ${producto.title}">
+                  <div class="card-body">
+                      <h5 class="card-title">${producto.title}</h5>
+                      <h6 class="card-price">Precio: $${producto.price}</h6>
+                      <p class="descripcion">${producto.description.length > 50 ? producto.description.substring(0, 50) + "..." : producto.description}</p>
+                      <button class="btn btn-primary boton-carrito">Agregar al Carrito</button>
+                  </div>
               </div>
-            </div>
           `;
           cardContainer.appendChild(cardDiv);
-        });
+      });
+      
       })
       .catch(error => {
         console.error("Error al cargar los productos:", error);

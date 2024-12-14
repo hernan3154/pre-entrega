@@ -1,0 +1,196 @@
+
+body {
+  margin: 0;
+  min-height: 100%;
+  justify-content: center;
+    --s: 41px; /* control the size*/
+    --c1: #774f38;
+    --c2: #bbaad4;
+
+    --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+    --_c:,#0000 75%,var(--c2) 0;
+    background:
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+      conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+      conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+      var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+    background-size: var(--s) var(--s);
+  
+}
+/***************************************/
+/*  contador de las tajetas + - */
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 0.5rem;
+  padding: 1rem;
+}
+.btn-secondary{
+  font-size: 0.5rem;
+  background-color: #8f0d0d;
+
+}
+
+.cantidad {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+  /*********************************/
+ /* Contenedor de productos */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 10px;
+  padding: 3rem;
+  margin: auto;
+}
+.col-md-4 {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #3F51B5;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #303F9F;
+}
+
+  /*************************************/
+  main{
+    width: 100%;
+    height: auto;
+  }
+  .h1-titulo{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+.h1-titulo h1{
+    
+    font-weight: 700;
+    text-shadow:
+    -1px -1px 3px #999,
+    0 0 1px darkred,
+    /*1px 1px 1px red,*/
+    2px 2px 1px #555,
+    3px 3px 1px #222,
+    4px 4px 1px #000;
+color: black;
+}
+  .promo-message {
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    /*background-color: #3F51B5;*/ /* Fondo sutil */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.8);
+    text-shadow:
+    /*-1px -1px 3px #999,*/
+    0 0 -1px darkred,
+   /* 1px 1px 1px red,*/
+    2px 2px 1px #555,
+    3px 3px 1px #222,
+    4px 4px 1px #000;
+color: black;
+}
+
+@media (min-width: 768px) {
+   .container-md, .container-sm {
+      max-width: 100%;
+  }
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: auto;
+}
+}
+@media (min-width: 602px){
+  .products-container {
+    display: grid;
+   justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 4px;
+    padding: 0rem;
+    margin: auto;
+    --s: 41px; /* control the size*/
+    --c1: #774f38;
+    --c2: #aca0b99c;
+
+    --_g:radial-gradient(#0000 60%,var(--c1) 61% 63%,#0000 64% 77%,var(--c1) 78% 80%,#0000 81%);
+    --_c:,#0000 75%,var(--c2) 0;
+    background:
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)* .44) calc(.9*var(--s)),
+      conic-gradient(at 12% 20% var(--_c)) calc(var(--s)*-.06) calc(.4*var(--s)),
+      conic-gradient(at 20% 12% var(--_c)) calc(.9*var(--s)) calc(var(--s)* .44),
+      conic-gradient(at 20% 12% var(--_c)) calc(.4*var(--s)) calc(var(--s)*-.06),
+      var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2) var(--c2);
+    background-size: var(--s) var(--s);
+}
+.products-container img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
