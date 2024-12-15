@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cardDiv.className = "col-md-4";
   
             cardDiv.innerHTML = `
-              <div class="card" id="card">
+              <div class="card" id="card" style="background-color: #e4e4e4;">
                 <img src="${producto.thumbnail}" id="imagen" class="card-img-top imagen" alt="${producto.title}">
                 <div class="card-body">
                   <h5 class="card-title" id="titulo">${producto.title}</h5>
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cardDiv.className = "col-md-4";
   
             cardDiv.innerHTML = `
-              <div class="card" id="card">
+              <div class="card" id="card" style="background-color: #e4e4e4;">
                 <img src="${producto.thumbnail}" id="imagen" class="card-img-top imagen" alt="${producto.title}">
                 <div class="card-body">
                   <h5 class="card-title" id="titulo">${producto.title}</h5>

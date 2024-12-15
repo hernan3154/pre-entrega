@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           cardDiv.className = "col-lg-3 col-md-4 col-sm-6 mb-4"; // Más flexibilidad responsiva
       
           cardDiv.innerHTML = `
-              <div class="card">
+              <div class="card" >
                   <img src="${producto.thumbnail}" class="card-img-top imagen" alt="${producto.title}" aria-label="Imagen del producto ${producto.title}">
                   <div class="card-body">
                       <h5 class="card-title">${producto.title}</h5>
