@@ -1,0 +1,90 @@
+body,
+html {
+    margin: 0;
+    /* Elimina márgenes predeterminados */
+    padding: 0;
+    /* Elimina cualquier relleno */
+    width: 100%;
+    /* Asegura que ocupen el ancho completo */
+    height: 100%;
+    /* Asegura que ocupen toda la altura */
+    overflow-x: hidden;
+    /* Evita desplazamientos horizontales no deseados */
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/6146700/pexels-photo-6146700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-card {
+    border: none;
+    
+    border-radius: 15px;
+    
+    background: rgba(255, 250, 250, 0.9);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body i {
+    transition: transform 0.3s ease;
+    /* Suaviza ícono al hacer hover */
+}
+
+.custom-card:hover i {
+    transform: scale(1.2);
+    /* Agranda el ícono al pasar el cursor */
+}
+
+.card-title {
+    font-family: 'Goblin One', cursive;
+    /* Fuente más llamativa */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #333;
+    /* Texto más suave */
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.g-4,
+.gy-4 {
+    --bs-gutter-y: 4.5rem;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(0* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    padding: 20px;
+   
+}
