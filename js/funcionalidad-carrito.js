@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let total = 0;
         let cantidadTotal = 0; // Para contar la cantidad total de productos en el carrito
 
-        carrito.forEach(item => {
+        carrito.forEach((item, index) => {
             const row = document.createElement('tr');
 
             // Imagen
@@ -36,10 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
             precio.textContent = `$${item.precio.toFixed(2)}`;
             row.appendChild(precio);
 
-            // Cantidad
-            const cantidad = document.createElement('td');
-            cantidad.textContent = item.cantidad || 1; // Ajustable en el futuro
-            row.appendChild(cantidad);
+            // Cantidad (con botones + y -)
+            const cantidadTd = document.createElement('td');
+            const decrementButton = document.createElement('button');
+            decrementButton.textContent = '-';
+            decrementButton.classList.add('btn', 'btn-primary', 'btn-sm');
+            decrementButton.addEventListener('click', () => actualizarCantidad(index, -1));
+
+            const cantidadSpan = document.createElement('span');
+            cantidadSpan.textContent = item.cantidad || 1;
+            cantidadSpan.style.margin = '0 10px';
+
+            const incrementButton = document.createElement('button');
+            incrementButton.textContent = '+';
+            incrementButton.classList.add('btn', 'btn-primary', 'btn-sm');
+
+
+            incrementButton.addEventListener('click', () => actualizarCantidad(index, 1));
+            cantidadTd.appendChild(decrementButton);
+            cantidadTd.appendChild(cantidadSpan);
+            cantidadTd.appendChild(incrementButton);
+            row.appendChild(cantidadTd);
 
             // Subtotal
             const subtotal = item.precio * (item.cantidad || 1);
@@ -63,6 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         totalgeneral.textContent = total.toFixed(2);
         actualizarContadorCarrito(cantidadTotal); // Actualizamos el contador del carrito
+    }
+
+    function actualizarCantidad(index, change) {
+        // Actualizar la cantidad en el carrito
+        carrito[index].cantidad = Math.max((carrito[index].cantidad || 1) + change, 1); // Evitar cantidades menores a 1
+        localStorage.setItem('carrito', JSON.stringify(carrito)); // Guardar el carrito actualizado
+        cargarCarrito(); // Recargar el carrito para mostrar cambios
     }
 
     function eliminarDelCarrito(titulo) {

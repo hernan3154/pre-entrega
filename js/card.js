@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
         actualizaContadorCarrito(); // Actualizar el contador del carrito
       } else {
+        carrito[index].cantidad += 1;
         alert("Este producto ya está en el carrito.");
       }
     }
